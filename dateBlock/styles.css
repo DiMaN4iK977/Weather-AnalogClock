@@ -1,0 +1,61 @@
+body {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.date {
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.date__month {
+    width: 100%;
+    height: 40px;
+
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+@-webkit-keyframes date__date {
+    from {
+        text-shadow: 0 0 10px #F5DEB3, 0 0 20px #F5DEB3, 0 0 30px Black, 0 0 40px Black, 0 0 50px Black, 0 0 60px Black, 0 0 70px Black;
+    }
+    to {
+        text-shadow: 0 0 20px #F5DEB3, 0 0 30px #DEB887, 0 0 40px #DEB887, 0 0 50px #DEB887, 0 0 60px #DEB887, 0 0 70px #DEB887, 0 0 80px #DEB887;
+    }
+}
+
+.date__date {
+    width: 100%;
+    height: 120px;
+    background-color: #A52A2A;
+    color: white;
+    /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;*/
+    /*text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    -webkit-animation: date__date 5s ease-in-out infinite alternate;
+    -moz-animation: date__date 5s ease-in-out infinite alternate;
+    animation: date__date 5s ease-in-out infinite alternate;
+}
+
+.date_day {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}

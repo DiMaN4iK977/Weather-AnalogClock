@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="analogClockBlock/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="today"><div class="dateToday">Текущая погода</div>
+            <div class="main_block">
+                <div class="name">Погода в Минске сейчас</div>
+                <div class="container__main">
+                    <div class="firstPart">
+                        <div class="currentTempDay"></div>
+                        <div class="icon">
+                            <img class="todayImg">
+                            <div class="currentTempFeeling"></div>
+                        </div>
+                    </div>
+                    <div class="maxTempToday"></div>
+                </div>
+            </div>
+            <div class="footer__today">
+                <div class="current">
+                    <div class="text">Скорость ветра</div>
+                    <div class="currentSpeedWind" ></div>
+                </div>
+                <div class="current">
+                    <div class="text">Давление</div>
+                    <div class="currentPressure" ></div>
+                </div>
+                <div class="current">
+                    <div class="text">Влажность</div>
+                    <div class="currenHumidity" > </div>
+                </div>
+            </div>
+        </div>
+        <div id='clock'>Тут будет текущее время</div> <br>
+        <canvas height='480' width='480' id='myCanvas'></canvas>
+    </div>
+    <div class="nextDays" >
+        <div class="today__block">
+            <div class="date0"></div>
+                <div class="part">
+                    <img class="img0">
+                    <div class="temp">
+                        <div class="tempDay0"></div>
+                        <div class="tempNight0"></div>
+                    </div>
+                </div>
+            </div>
+        <div class="today__block">
+            <div class="date1"></div>
+            <div class="part">
+                <img class="img1">
+                <div class="temp">
+                    <div class="tempDay1"></div>
+                    <div class="tempNight1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="today__block">
+            <div class="date2"></div>
+            <div class="part">
+                <img class="img2">
+                <div class="temp">
+                    <div class="tempDay2"></div>
+                    <div class="tempNight2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="today__block">
+            <div class="date3"></div>
+            <div class="part">
+                <img class="img3">
+                <div class="temp">
+                    <div class="tempDay3"></div>
+                    <div class="tempNight3"></div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="part">-->
+<!--            <img class="img1">-->
+<!--            <div class="temp">-->
+<!--                <div class="tempDay1"></div>-->
+<!--                <div class="tempNight1"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="part">-->
+<!--            <img class="img2">-->
+<!--            <div class="temp">-->
+<!--                <div class="tempDay2"></div>-->
+<!--                <div class="tempNight2"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="part">-->
+<!--            <img class="img3">-->
+<!--            <div class="temp">-->
+<!--                <div class="tempDay3"></div>-->
+<!--                <div class="tempNight3"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+<script src="weatherApp.js"></script>
+<script src="analogClockBlock/clockApp.js"></script>
+</body>
+</html>
